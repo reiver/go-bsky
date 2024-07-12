@@ -20,6 +20,10 @@ func ReasonRepost(uri string) Reason {
 	}
 }
 
+func (receiver internalReasonRepost) MarshalJSON() ([]byte, error) {
+	return reasonMarshalJSON(receiver)
+}
+
 func (receiver internalReasonRepost) ReasonAttributes() map[string]interface{} {
 	return map[string]interface{}{
 		"repost":receiver.uri,

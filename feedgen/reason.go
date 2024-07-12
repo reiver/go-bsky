@@ -1,5 +1,9 @@
 package feedgen
 
+import (
+	"encoding/json"
+)
+
 // Reason represents the optional reason in an item list from the "/xrpc/app.bsky.feed.getFeedSkeleton" response.
 //
 // For example, if the reason is the JSON:
@@ -19,6 +23,7 @@ package feedgen
 //		"repost": "at://did:example:1234/app.bsky.feed.post/9876543210",
 //	}
 type Reason interface {
+	json.Marshaler
 	ReasonType() string
 	ReasonAttributes() map[string]interface{}
 }

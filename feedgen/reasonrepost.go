@@ -14,7 +14,7 @@ var _ Reason = internalReasonRepost{}
 //		"$type":  "app.bsky.feed.defs#skeletonReasonRepost",
 //		"repost": "at://did:example:1234/app.bsky.feed.post/9876543210"
 //	}
-func ReasonReport(uri string) Reason {
+func ReasonRepost(uri string) Reason {
 	return internalReasonRepost{
 		uri:uri,
 	}

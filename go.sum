@@ -1,0 +1,4 @@
+github.com/reiver/go-erorr v0.0.0-20240704145350-0485e21eaa82 h1:xxt7qL+7ZfRysXWXU2MpULOg/zWe5P+Fmw9VyUFCmZE=
+github.com/reiver/go-erorr v0.0.0-20240704145350-0485e21eaa82/go.mod h1:F0HbBf+Ak2ZlE8YkDW4Y+KxaUmT0KaaIJK6CXY3cJxE=
+github.com/reiver/go-opt v0.0.0-20240704165441-4ce81358adfc h1:9ARo75fNaZDaGy6zzTrCnJWtkDMNigM7uMRRK8sUERM=
+github.com/reiver/go-opt v0.0.0-20240704165441-4ce81358adfc/go.mod h1:Yu6dFKh0IZ0evP9U5QiBlxBa5BhlBzGEn7EZ1kP/pkA=

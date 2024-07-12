@@ -10,6 +10,9 @@ func reasonMarshalJSON(reason Reason) ([]byte, error) {
 	}
 
 	var data map[string]interface{} = reason.ReasonAttributes()
+	if nil == data {
+		data = map[string]interface{}{}
+	}
 
 	data["$type"] = reason.ReasonType()
 

@@ -21,14 +21,14 @@ var _ json.Marshaler = internalFeedSkeleton{}
 
 func FeedSkeletonItems(items ...Item) FeedSkeleton {
 	return internalFeedSkeleton {
-		feed: FeedItems(items),
+		feed: FeedItems(items...),
 	}
 }
 
 func FeedSkeletonCursonItems(cursor string, items ...Item) FeedSkeleton {
 	return internalFeedSkeleton {
-		cursor: cursor,
-		feed: FeedItems(items),
+		cursor: opt.Something(cursor),
+		feed: FeedItems(items...),
 	}
 }
 

@@ -19,6 +19,19 @@ type internalFeedSkeleton struct {
 
 var _ json.Marshaler = internalFeedSkeleton{}
 
+func FeedSkeletonItems(items ...Item) FeedSkeleton {
+	return internalFeedSkeleton {
+		feed: FeedItems(items),
+	}
+}
+
+func FeedSkeletonCursonItems(cursor string, items ...Item) FeedSkeleton {
+	return internalFeedSkeleton {
+		cursor: cursor,
+		feed: FeedItems(items),
+	}
+}
+
 func (receiver internalFeedSkeleton) Cursor() (string, bool) {
 	return receiver.cursor.Get()
 }

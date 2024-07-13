@@ -33,5 +33,9 @@ func (receiver internalFeed) Items() []Item {
 func (receiver internalFeed) MarshalJSON() ([]byte, error) {
 	var data []Item = receiver.Items()
 
+	if len(data) <= 0 {
+		return []byte("[]"), nil
+	}
+
 	return json.Marshal(data)
 }

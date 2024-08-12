@@ -1,10 +1,57 @@
 package firehose
 
+import (
+	"bytes"
+	"io"
+
+	"github.com/ipld/go-car"
+	"github.com/reiver/go-erorr"
+)
+
 // The message that comes back from the Bluesky Firehose websocket is 2 CBOR objects concatenated with each other.
 // The first part is called the message-header. The second part is called the message-payload.
 //
 // MessagePayload represents the message-payload.
 type MessagePayload map[string]any
+
+func (receiver MessagePayload) Blocks() (*car.CarReader, error) {
+	const name string = "blocks"
+
+	if nil == receiver {
+		return nil, errNilReceiver
+	}
+
+	values, found := receiver[name]
+	if !found {
+		return nil, errNoBlocks
+	}
+
+	var blocks []byte
+	{
+		var casted bool
+		blocks, casted = values.([]byte)
+		if !casted {
+			return nil, errBlocksNotBytes
+		}
+	}
+
+	var carreader *car.CarReader
+	{
+		var reader io.Reader = bytes.NewReader(blocks)
+		if nil == reader {
+			return nil, errNilReader
+		}
+
+		var err error
+
+		carreader, err = car.NewCarReader(reader)
+		if nil != err {
+			return nil, erorr.Errorf("bsky: problem creating CAR (Content Addressable aRchives) reader: %w", err)
+		}
+	}
+
+	return carreader, nil
+}
 
 func (receiver MessagePayload) Rebase() (bool, bool) {
 	const name string = "rebase"

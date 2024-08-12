@@ -2,7 +2,6 @@ package firehose
 
 import (
 	"bytes"
-	"fmt"
 	"io"
 	"strings"
 

@@ -14,7 +14,7 @@ func (receiver MessagePayload) Rebase() (bool, bool) {
 		return empty, false
 	}
 
-	value, found := receiver["rebase"]
+	value, found := receiver[name]
 	if !found {
 		return empty, false
 	}

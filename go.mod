@@ -9,7 +9,7 @@ require (
 	github.com/reiver/go-atproto v0.0.0-20240906153838-97b93b841d0f
 	github.com/reiver/go-erorr v0.0.0-20240801233437-8cbde6d1fa3f
 	github.com/reiver/go-fallback v0.0.0-20240906145154-1ce9eadf06a8
-	github.com/reiver/go-maps v0.0.0-20240906134759-3345bef5696e
+	github.com/reiver/go-maps v0.0.0-20240906190342-93be57f28be1
 	github.com/reiver/go-opt v0.0.0-20240704165441-4ce81358adfc
 	github.com/reiver/go-xrpc v0.0.0-20240905133829-2de40c4662d8
 )

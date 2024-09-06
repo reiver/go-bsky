@@ -236,8 +236,8 @@ github.com/reiver/go-json v0.0.0-20240828120501-c8794288440c h1:P/TwDkVb8tLTw+5y
 github.com/reiver/go-json v0.0.0-20240828120501-c8794288440c/go.mod h1:ns4kpzbK+OyMUZYT8UmBxrsYWNmvB/irZGmyIh99cxY=
 github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f h1:KBVWBoNIM8mHkUR3dP64hm2p2vxoD5xHZ6wUllCjFTc=
 github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f/go.mod h1:PFseSi8S0CBkc+YB6jYWtogPk83LumclnYJZZBQJJhs=
-github.com/reiver/go-maps v0.0.0-20240906134759-3345bef5696e h1:BHOtiLYq9y4UqY6B0H9uecCs6LMERWxpEww5CFgHgRs=
-github.com/reiver/go-maps v0.0.0-20240906134759-3345bef5696e/go.mod h1:dMbnpn0BuIGwSFlCUSTYPDP3nDt2pSe6qP5vfbV1kBE=
+github.com/reiver/go-maps v0.0.0-20240906190342-93be57f28be1 h1:5fRVUeCqPN8G8phNmd1G0Pu7g35sojAQBnIvZ8C+s8c=
+github.com/reiver/go-maps v0.0.0-20240906190342-93be57f28be1/go.mod h1:dMbnpn0BuIGwSFlCUSTYPDP3nDt2pSe6qP5vfbV1kBE=
 github.com/reiver/go-nsid v0.0.0-20240827010024-502157631805 h1:n99Q6VH4QILtBkjhizZqpFM6pYAWNQOql7w2i8be7XU=
 github.com/reiver/go-nsid v0.0.0-20240827010024-502157631805/go.mod h1:SKdoFsRm1U68egJyiogBIvirYGhXPqC6BsWDZ7k4tmw=
 github.com/reiver/go-opt v0.0.0-20240704165441-4ce81358adfc h1:9ARo75fNaZDaGy6zzTrCnJWtkDMNigM7uMRRK8sUERM=

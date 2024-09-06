@@ -6,7 +6,7 @@ require (
 	github.com/brianolson/cbor_go v1.0.0
 	github.com/fxamacker/cbor/v2 v2.7.0
 	github.com/ipld/go-car v0.6.2
-	github.com/reiver/go-atproto v0.0.0-20240906153838-97b93b841d0f
+	github.com/reiver/go-atproto v0.0.0-20240906195827-a1832b0df821
 	github.com/reiver/go-erorr v0.0.0-20240801233437-8cbde6d1fa3f
 	github.com/reiver/go-fallback v0.0.0-20240906145154-1ce9eadf06a8
 	github.com/reiver/go-maps v0.0.0-20240906190342-93be57f28be1
@@ -57,7 +57,7 @@ require (
 	github.com/reiver/go-json v0.0.0-20240828120501-c8794288440c // indirect
 	github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f // indirect
 	github.com/reiver/go-nsid v0.0.0-20240827010024-502157631805 // indirect
-	github.com/reiver/go-reg v0.0.0-20240906170358-55a776935ee2 // indirect
+	github.com/reiver/go-reg v0.0.0-20240906195701-6e62f43c2835 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/whyrusleeping/cbor-gen v0.0.0-20230126041949-52956bd4c9aa // indirect
 	github.com/x448/float16 v0.8.4 // indirect

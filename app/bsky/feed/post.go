@@ -64,3 +64,7 @@ func (receiver *Post) FromMap(src map[string]any) error {
 
 	return err
 }
+
+func (receiver Post) RecordType() string {
+	return receiver.Type.String()
+}

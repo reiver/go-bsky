@@ -64,3 +64,7 @@ func (receiver *Follow) FromMap(src map[string]any) error {
 
 	return err
 }
+
+func (receiver Follow) RecordType() string {
+	return receiver.Type.String()
+}

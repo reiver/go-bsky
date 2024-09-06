@@ -70,3 +70,7 @@ func (receiver *Repost) FromMap(src map[string]any) error {
 
 	return err
 }
+
+func (receiver Repost) RecordType() string {
+	return receiver.Type.String()
+}

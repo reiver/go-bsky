@@ -3,11 +3,11 @@ package feed
 import (
 	goerrors "errors"
 
+	"github.com/reiver/go-atproto/record/registry"
 	"github.com/reiver/go-erorr"
 
 	"github.com/reiver/go-bsky/internal/errors"
 	"github.com/reiver/go-bsky/internal/strng"
-	"github.com/reiver/go-bsky/record/registry"
 )
 
 const PostTypeValue = "app.bsky.feed.post"

@@ -6,12 +6,12 @@ require (
 	github.com/brianolson/cbor_go v1.0.0
 	github.com/fxamacker/cbor/v2 v2.7.0
 	github.com/ipld/go-car v0.6.2
+	github.com/reiver/go-atproto v0.0.0-20240906153838-97b93b841d0f
 	github.com/reiver/go-erorr v0.0.0-20240801233437-8cbde6d1fa3f
 	github.com/reiver/go-fallback v0.0.0-20240906145154-1ce9eadf06a8
 	github.com/reiver/go-maps v0.0.0-20240906134759-3345bef5696e
 	github.com/reiver/go-opt v0.0.0-20240704165441-4ce81358adfc
-	github.com/reiver/go-reg v0.0.0-20240906034314-c2aa22064622
-	github.com/reiver/go-xrpc v0.0.0-20240827042920-4222059b9013
+	github.com/reiver/go-xrpc v0.0.0-20240905133829-2de40c4662d8
 )
 
 require (
@@ -19,6 +19,7 @@ require (
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/google/uuid v1.3.0 // indirect
+	github.com/gorilla/websocket v1.5.3 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/ipfs/bbloom v0.0.4 // indirect
 	github.com/ipfs/go-block-format v0.1.2 // indirect
@@ -53,7 +54,10 @@ require (
 	github.com/polydawn/refmt v0.89.0 // indirect
 	github.com/reiver/go-cast v0.0.0-20240904124821-be0103637c3f // indirect
 	github.com/reiver/go-errhttp v1.1.1-0.20240827033330-e4ea888843cc // indirect
+	github.com/reiver/go-json v0.0.0-20240828120501-c8794288440c // indirect
+	github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f // indirect
 	github.com/reiver/go-nsid v0.0.0-20240827010024-502157631805 // indirect
+	github.com/reiver/go-reg v0.0.0-20240906034314-c2aa22064622 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/whyrusleeping/cbor-gen v0.0.0-20230126041949-52956bd4c9aa // indirect
 	github.com/x448/float16 v0.8.4 // indirect
@@ -62,8 +66,8 @@ require (
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
-	golang.org/x/crypto v0.6.0 // indirect
-	golang.org/x/sys v0.5.0 // indirect
+	golang.org/x/crypto v0.25.0 // indirect
+	golang.org/x/sys v0.22.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	lukechampine.com/blake3 v1.1.7 // indirect

@@ -1,12 +1,22 @@
 package feed
 
 import (
+	goerrors "errors"
+
 	"github.com/reiver/go-erorr"
 
 	"github.com/reiver/go-bsky/internal/errors"
+	"github.com/reiver/go-bsky/internal/strng"
+	"github.com/reiver/go-bsky/record/registry"
 )
 
 const PostTypeValue = "app.bsky.feed.post"
+
+func init() {
+	registry.NewFuncs.Set(PostTypeValue, func()registry.Record {
+		return new(Post)
+	})
+}
 
 // Post represents a 'app.bsky.feed.post'.
 type Post struct {
@@ -39,4 +49,18 @@ func (receiver *PostType) UnmarshalText(text []byte) error {
 	}
 
 	return nil
+}
+
+func (receiver *Post) FromMap(src map[string]any) error {
+	if nil == receiver {
+		return errors.ErrNilReceiver
+	}
+
+	err1 := strng.Set(&(receiver.Type),      src["$type"])
+	err2 := strng.Set(&(receiver.CreatedAt), src["createdAt"])
+	err3 := strng.Set(&(receiver.Text),      src["text"])
+
+	var err error = goerrors.Join(err1, err2, err3)
+
+	return err
 }

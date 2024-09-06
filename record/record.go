@@ -1,5 +1,7 @@
 package record
 
-type Record interface {
-	FromMap(any) error
-}
+import (
+	"github.com/reiver/go-bsky/record/registry"
+)
+
+type Record = registry.Record

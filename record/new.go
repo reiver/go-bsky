@@ -1,16 +1,14 @@
 package record
 
 import (
-	"github.com/reiver/go-reg"
+	"github.com/reiver/go-bsky/record/registry"
 )
-
-var NewFuncs reg.Registry[func()Record]
 
 func New(name string) (Record, bool) {
 	var fn func()Record
 	var found bool
 
-	fn, found = NewFuncs.Get(name)
+	fn, found = registry.NewFuncs.Get(name)
 	if !found {
 		return nil, false
 	}

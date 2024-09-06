@@ -23,6 +23,7 @@ type Post struct {
 	Type      PostType `json:"$type"`
 	CreatedAt string   `json:"createdAt"`
 	Text      string   `json:"text"`
+//	Langs   []string   `json:"langs"`
 }
 
 type PostType struct {}

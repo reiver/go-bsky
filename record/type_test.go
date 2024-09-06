@@ -1,9 +1,9 @@
-package typed_test
+package record_test
 
 import (
 	"testing"
 
-        "github.com/reiver/go-bsky/typed"
+        "github.com/reiver/go-bsky/record"
 )
 
 func TestType(t *testing.T) {
@@ -79,7 +79,7 @@ func TestType(t *testing.T) {
 
 	for testNumber, test := range tests {
 
-		actual, err := typed.Type(test.Src)
+		actual, err := record.Type(test.Src)
 		if nil != err {
 			t.Errorf("For test #%d, did not expect an error but actually got one.", testNumber)
 			t.Logf("ERROR: (%T) %s", err, err)

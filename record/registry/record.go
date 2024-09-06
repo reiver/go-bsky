@@ -1,5 +1,5 @@
 package registry
 
 type Record interface {
-	FromMap(any) error
+	FromMap(map[string]any) error
 }

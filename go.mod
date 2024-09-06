@@ -57,7 +57,7 @@ require (
 	github.com/reiver/go-json v0.0.0-20240828120501-c8794288440c // indirect
 	github.com/reiver/go-lck v0.0.0-20240808133902-b56df221c39f // indirect
 	github.com/reiver/go-nsid v0.0.0-20240827010024-502157631805 // indirect
-	github.com/reiver/go-reg v0.0.0-20240906034314-c2aa22064622 // indirect
+	github.com/reiver/go-reg v0.0.0-20240906162828-c83b1046a0bc // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/whyrusleeping/cbor-gen v0.0.0-20230126041949-52956bd4c9aa // indirect
 	github.com/x448/float16 v0.8.4 // indirect
